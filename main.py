@@ -1,12 +1,3 @@
-import subprocess
-import sys
+import os
 
-subprocess.run([
-    sys.executable,
-    "-m",
-    "pip",
-    "install",
-    "git+https://github.com/NousResearch/hermes-agent.git"
-], check=True)
-
-subprocess.run(["hermes"])
+os.system("hermes gateway run")
